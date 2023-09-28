@@ -1,3 +1,10 @@
+<script lang="ts" setup>
+//
+import Sidebar from "@/components/sidebar.vue";
+import Topvar from "@/components/navbar.vue";
+import { ref } from "vue";
+</script>
+
 <template>
   <v-app>
     <Sidebar />
@@ -9,9 +16,3 @@
     </v-main>
   </v-app>
 </template>
-
-<script lang="ts" setup>
-//
-import Sidebar from "@/components/sidebar.vue";
-import Topvar from "@/components/navbar.vue";
-</script>

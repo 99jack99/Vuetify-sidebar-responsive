@@ -2,7 +2,7 @@
 import { ref } from "vue";
 
 let drawer = ref<boolean>(true);
-let rail = ref<boolean>(true);
+let rail = ref<boolean>(false);
 </script>
 
 <template>
