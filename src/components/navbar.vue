@@ -1,12 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
-
-let current = ref<boolean>(true);
-
-let testa = () => {
-  current.value = !current.value;
-  return current;
-};
+import { toggle } from "@/composables/togglable";
 </script>
 
 <template>
@@ -15,7 +8,7 @@ let testa = () => {
     <v-app-bar-nav-icon
       ><v-icon
         icon="mdi-arrow-expand-horizontal"
-        @click="$emit('test', testa())"
+        @click="toggle.setIsOpened()"
       ></v-icon>
     </v-app-bar-nav-icon>
     <v-app-bar-title>Title</v-app-bar-title>

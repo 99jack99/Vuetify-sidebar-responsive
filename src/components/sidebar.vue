@@ -1,17 +1,9 @@
 <script setup lang="ts">
-import { ref } from "vue";
-
-let drawer = ref<boolean>(true);
-let rail = ref<boolean>(false);
+import { toggle } from "@/composables/togglable";
 </script>
 
 <template>
-  <v-navigation-drawer
-    v-model="drawer"
-    :rail="rail"
-    permanent
-    @click="rail = !rail"
-  >
+  <v-navigation-drawer :rail="toggle.isOpened" permanent>
     <v-img src="@/assets/logo/logoipsum.svg" class="h-25"></v-img>
     <v-list>
       <v-list nav>

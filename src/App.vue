@@ -2,7 +2,6 @@
 //
 import Sidebar from "@/components/sidebar.vue";
 import Topvar from "@/components/navbar.vue";
-import { ref } from "vue";
 </script>
 
 <template>
