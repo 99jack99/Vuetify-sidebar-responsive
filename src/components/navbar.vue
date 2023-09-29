@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { toggle } from "@/composables/togglable";
+import { sidebar_actions } from "@/helpers/sidebar";
 </script>
 
 <template>
@@ -8,7 +8,7 @@ import { toggle } from "@/composables/togglable";
     <v-app-bar-nav-icon
       ><v-icon
         icon="mdi-arrow-expand-horizontal"
-        @click="toggle.setIsOpened()"
+        @click="sidebar_actions.open_sidebar()"
       ></v-icon>
     </v-app-bar-nav-icon>
     <v-app-bar-title>Title</v-app-bar-title>
@@ -22,3 +22,4 @@ import { toggle } from "@/composables/togglable";
 </template>
 
 <style lang="scss" scoped></style>
+@/helpers/togglable
